@@ -1,0 +1,1 @@
+(function(){jQuery(function(e){return e(".carousel").slick({dots:!0,infinite:!0}),e("#calendar").fullCalendar({googleCalendarApiKey:"AIzaSyCKpdEmBFNJBWEwuz-Q2noPv4cz2b9W7Us",events:{googleCalendarId:"khcc7lu2ap7akodj1gbh32k63o@group.calendar.google.com"},eventClick:function(e,n,l){return!1}}),this})}).call(this);

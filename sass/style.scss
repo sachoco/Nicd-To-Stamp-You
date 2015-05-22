@@ -1,0 +1,348 @@
+@import "compass/reset";
+// import settings :
+@import 'settings';
+
+$bg-color: #fff;
+$base-font-size: 18px;
+$font-family: OfficinaSansITCStd-Book;
+$font-color: #555;
+* {
+	box-sizing: border-box;
+}
+html, body {
+	height: 100%;
+	position: relative;
+	font-size: $base-font-size;
+	font-family: $font-family;
+	color: $font-color;
+	line-height: 1.3;
+}
+a {
+	color: $font-color;
+}
+button {
+	font-family: $font-family;	
+}
+ol {
+	list-style: decimal;
+	li {
+		list-style-position: inside;
+		&:before {
+			content: "\A"; 
+			white-space: pre;
+		}
+	}
+}
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: $bg-color;
+	padding: 30px 50px 0;
+	z-index: 10;
+}
+footer {
+	clear: both;
+}
+nav {
+	padding: 1em 0;
+	ul {
+		list-style: none;
+		li {
+			display: inline-block;
+			margin-right: 2.5em;
+			&:last-child {
+				margin-right: 0;
+			}
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+	&.top-nav {
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding-top: 5px;
+	}
+}
+
+.btn {
+	background-color: #F3F3F3;
+	padding: 0.2em 1em 0.1em;
+	border: none;
+}
+.clear {
+	clear: both;
+}
+.content-box {
+	box-sizing: content-box;
+	padding: 30px;
+}
+.wrap {
+	margin: auto;
+	max-width: 900px;
+	position: relative;
+	&--small {
+		@extend .wrap;
+		max-width: 700px;
+	}
+	&--600 {
+		@extend .wrap;
+		max-width: 600px;
+	}
+}
+.bg-gray {
+	background-color: #F3F3F3;
+}
+.background {
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.fullwidth {
+	width: 100%;
+}
+.absolute {
+	position: absolute;
+	top: 0;
+	z-index: 0;
+	&--right {
+		@extend .absolute;
+		right: 0;
+	}
+}
+/* Responsive iFrame */
+ 
+.responsive-iframe-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+ 
+.responsive-iframe-container iframe,   
+.vresponsive-iframe-container object,  
+.vresponsive-iframe-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+section {
+	position: relative;
+	padding: 50px;
+	clear: both;
+	// font-size: 1.35em;
+
+	&#intro {
+		background: url(../images/nice_stamp_back.jpg) no-repeat center center;
+		background-size: cover;
+		width: 100%;
+		height: 100%
+	}
+	&#story {
+		background: #D7D8DC;
+		// background: #D7D8DC url(../images/nice_stamp_back_crop.jpg) no-repeat center 300px;
+		background-size: cover;
+	}
+	&#book {
+		p {
+			margin-bottom: 1em;
+		}
+	}
+	&#how {
+		.step {
+			position: relative;
+			height: 400px;
+			&__text {
+				max-width: 400px;
+			}
+			&__image {
+				position: absolute;
+				top: 0;
+				left: 400px;
+			}
+			&--500 {
+				@extend .step;
+				.step__text {
+					max-width: 500px;
+				}
+				.step__image {
+					left: 500px;
+				}
+			}
+			&.step-2 {
+				.step__image {
+					top: -50px;
+				}
+			}
+			&.step-3 {
+				.step__image {
+					top: -150px;
+					margin-left: 100px;
+				}
+			}
+			&.step-4 {
+				.step__image {
+					margin-left: 50px;
+				}
+			}
+		}		
+	}
+	&#stamp {
+		.product {
+			position: relative;
+			&__text {
+				float: left;
+				width: 40%;
+				padding-right: 20px;
+			}
+			&__image {
+				float: left;
+				width: 60%;
+				overflow: visible;
+
+			}
+		}
+	}
+	&#price {
+		.price {
+			margin-bottom: 3em;
+			&__item {
+				width: 33.33%;
+				text-align: center;
+				float: left;
+				.btn {
+					margin-top: 1em;
+				}
+			}
+		}
+		.logo-stamp {
+			margin-top: 5em;
+			float: left;
+			&__text {
+				// @include gridle ( 5 );
+				// @include gridle ( 12 , 'mobile' );	
+				width: 40%;	
+				float: left;		
+			}
+			&__image {
+				// @include gridle ( 7 );
+				// @include gridle ( 12 , 'mobile' );		
+				overflow: visible;
+				width: 60%;
+				float: left;
+			}			
+		}
+	}
+	&#contact {
+		// padding-left: 0;
+		// padding-right: 0;
+		input, textarea {
+			background: white;
+			border: none;
+			font-size: 0.8em;
+			padding: 0.7em;
+			margin-bottom: 1em;
+		}
+	}
+	&#about {
+		.about {
+			&__text {
+				// @include gridle ( 5 );
+				// @include gridle ( 12 , 'mobile' );	
+				width: 70%;	
+				padding-right: 1em;
+				float: left;
+				p {
+					margin-bottom: 1em;
+				}		
+			}
+			&__image {
+				// @include gridle ( 7 );
+				// @include gridle ( 12 , 'mobile' );		
+				overflow: visible;
+				width: 30%;
+				float: left;
+			}			
+		}
+	}
+	&#media {
+		.news {
+			float: left;
+			margin-bottom: 1em;
+			&__text {
+				width: 50%;	
+				padding-right: 1em;
+				float: left;	
+			}
+			&__image {	
+				overflow: visible;
+				width: 50%;
+				float: left;
+			}			
+		}
+	}
+}
+/*
+#overview
+Gulp入門サンプル
+
+サンプルファイルです
+*/
+/*#styleguide
+サンプル見出し１
+
+サンプルの見出しスタイル
+hoverすると青くなって10px動く
+```
+<h1>見出し１</h1>
+```
+*/
+h1 {
+	font-size: 1.3rem;
+	span {
+		font-size: 1rem;
+		margin-left: 1em;
+	}
+}
+h2, .h2 {
+	font-size: 1.3em;
+	margin: 1em 0;
+}
+.h2 {
+	margin-top: 0;
+}
+h3, .h3 {
+	font-size: 1.2em;
+	margin: 1em 0;
+}
+.h3 {
+	margin: 0;
+}
+
+$color: #fff;
+ 
+@mixin media($size){
+    @media screen and (max-width : $size){
+        @content;
+    }
+}
+ 
+
+@include media(980px){
+    body{
+        color: "#ccc";
+    }
+}
+ 
+@include media(980px){
+    h1{
+        color: "#ccc";
+    }
+}
