@@ -16,30 +16,24 @@
 
 	</div>
 </section>
-<section id="book">
+<section id="stamp">
 	<div class="wrap--small">
-		<h2>Book</h2>
-		<p>
-			The book "Nice to stamp you - 01" is a collection of 111 stamp designs which I carved out in the last three years. My sincere thanks go to those who kindly consented to show their stamps and their portraits in this book. In addition to the regular print edition, there will also be some limited first edition books hand-made by a book designer/illustrator, Inka Vybohova.
-		</p>
-
-		<div class="carousel">
-			  <div><img src="<?php bloginfo('template_directory'); ?>/images/book-1.jpg" alt=""></div>
-			  <div><img src="<?php bloginfo('template_directory'); ?>/images/book-2.jpg" alt=""></div>
-			  <div><img src="<?php bloginfo('template_directory'); ?>/images/book-3.jpg" alt=""></div>
-			  <div><img src="<?php bloginfo('template_directory'); ?>/images/book-4.jpg" alt=""></div>
-			  <div><img src="<?php bloginfo('template_directory'); ?>/images/book-5.jpg" alt=""></div>
-			  <div><img src="<?php bloginfo('template_directory'); ?>/images/book-6.jpg" alt=""></div>
-			  <div><img src="<?php bloginfo('template_directory'); ?>/images/book-7.jpg" alt=""></div>
-			  <div><img src="<?php bloginfo('template_directory'); ?>/images/book-8.jpg" alt=""></div>
-			  <div><img src="<?php bloginfo('template_directory'); ?>/images/book-9.jpg" alt=""></div>
-			  <div><img src="<?php bloginfo('template_directory'); ?>/images/book-10.jpg" alt=""></div>
+		<h2>STAMP</h2>
+		<div class="product">
+			<div class="product__text">
+				<p class="h2">
+					Every stamp is designed based on the stories a person told me during his or her interview.
+				</p>
+				<p>
+					It means that the stamp will show the person's state of mind at that time. <span class="underline">Starting a new life with a partner, welcoming a new family member, taking an adventurous step on a different career path</span>... This stamp is a suitable item for every milestone in your life.
+				</p>		
+			</div>
+			<div class="product__image">
+				<img src="<?php bloginfo('template_directory'); ?>/images/product.jpg" alt="">
+			</div>
 		</div>
-
-
-	</div>
+	</div>		
 </section>
-
 <section id="how">
 	<div class="wrap--small">
 		<h2>How the project works</h2>
@@ -83,24 +77,7 @@
 		</p>
 	</div>	
 </section>
-<section id="stamp">
-	<div class="wrap--small">
-		<h2>STAMP</h2>
-		<div class="product">
-			<div class="product__text">
-				<p class="h2">
-					Every stamp is designed based on the stories a person told me during his or her interview.
-				</p>
-				<p>
-					It means that the stamp will show the person's state of mind at that time. <span class="underline">Starting a new life with a partner, welcoming a new family member, taking an adventurous step on a different career path</span>... This stamp is a suitable item for every milestone in your life.
-				</p>		
-			</div>
-			<div class="product__image">
-				<img src="<?php bloginfo('template_directory'); ?>/images/product.jpg" alt="">
-			</div>
-		</div>
-	</div>		
-</section>
+
 <section id="price">
 	<div class="wrap--small">
 		<h2>Price</h2>
@@ -201,6 +178,30 @@
 		?>
 	</div>		
 </section>
+<section id="book">
+	<div class="wrap--small">
+		<h2>Book</h2>
+		<p>
+			The book "Nice to stamp you - 01" is a collection of 111 stamp designs which I carved out in the last three years. My sincere thanks go to those who kindly consented to show their stamps and their portraits in this book. In addition to the regular print edition, there will also be some limited first edition books hand-made by a book designer/illustrator, Inka Vybohova.
+		</p>
+
+		<div class="carousel">
+			  <div><img src="<?php bloginfo('template_directory'); ?>/images/book-1.jpg" alt=""></div>
+			  <div><img src="<?php bloginfo('template_directory'); ?>/images/book-2.jpg" alt=""></div>
+			  <div><img src="<?php bloginfo('template_directory'); ?>/images/book-3.jpg" alt=""></div>
+			  <div><img src="<?php bloginfo('template_directory'); ?>/images/book-4.jpg" alt=""></div>
+			  <div><img src="<?php bloginfo('template_directory'); ?>/images/book-5.jpg" alt=""></div>
+			  <div><img src="<?php bloginfo('template_directory'); ?>/images/book-6.jpg" alt=""></div>
+			  <div><img src="<?php bloginfo('template_directory'); ?>/images/book-7.jpg" alt=""></div>
+			  <div><img src="<?php bloginfo('template_directory'); ?>/images/book-8.jpg" alt=""></div>
+			  <div><img src="<?php bloginfo('template_directory'); ?>/images/book-9.jpg" alt=""></div>
+			  <div><img src="<?php bloginfo('template_directory'); ?>/images/book-10.jpg" alt=""></div>
+		</div>
+
+
+	</div>
+</section>
+
 <section id="media">
 	<div class="wrap--small">
 		<h2>Media</h2>
