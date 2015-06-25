@@ -17,6 +17,15 @@
         return false;
       }
     });
+    $('nav a').on("click", function(e) {
+      var id, p;
+      id = $(this).attr("href");
+      p = $(id).offset().top;
+      e.preventDefault();
+      return $('html,body').animate({
+        scrollTop: p
+      }, 1000);
+    });
     return this;
   });
 

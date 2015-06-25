@@ -57,9 +57,9 @@
                 </nav>
                 <nav class="top-nav">
                     <ul>
-                        <li><a href="#">Agenda/ Media</a></li>
-                        <li><a href="#">About Masa</a></li>
-                        <li><a href="#">Background</a></li>
+                        <li><a href="#agenda">Agenda/ Media</a></li>
+                        <li><a href="#about">About Masa</a></li>
+                        <li><a href="#background">Background</a></li>
                     </ul>
                 </nav>
             </div>

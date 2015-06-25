@@ -4,7 +4,21 @@
 	<div class="wrap--1200">
 		<div class="carousel">
 			<div>
-				<img src="<?php bloginfo('template_directory'); ?>/images/Portfolio/NiceStamp_00.jpg" alt="">
+				<img src="<?php bloginfo('template_directory'); ?>/images/slide-1.jpg" alt="">
+				<div class="text">The stamp is designed based on the stories you told me during the interview session.  
+					<svg width="18px" height="16px" viewBox="0 0 18 16">
+						<ellipse fill="none" stroke="#231F20" stroke-miterlimit="10" cx="5.134" cy="13.105" rx="3.889" ry="1.945"/>
+						<ellipse fill="none" stroke="#231F20" stroke-miterlimit="10" cx="12.912" cy="13.105" rx="3.889" ry="1.945"/>
+						<ellipse fill="none" stroke="#231F20" stroke-width="0.75" stroke-miterlimit="10" cx="9.024" cy="8.818" rx="1.546" ry="3.09"/>
+						<path fill="none" stroke="#231F20" stroke-miterlimit="10" d="M1.246,13.105c0-4.297,3.48-7.779,7.777-7.779
+							c4.295,0,7.777,3.482,7.777,7.779"/>
+						<path fill="#231F20" d="M10.151,1.685c0,0.625-0.505,1.13-1.127,1.13c-0.624,0-1.129-0.505-1.129-1.13
+							c0-0.621,0.505-1.127,1.129-1.127C9.646,0.558,10.151,1.064,10.151,1.685z"/>
+					</svg>
+				</div>
+			</div>
+			<div>
+				<img src="<?php bloginfo('template_directory'); ?>/images/slide-2.jpg" alt="">
 				<div class="text">The every stamp is hand-engraved after a personal interview session 
 					<svg width="18px" height="16px" viewBox="0 0 18 16">
 						<ellipse fill="none" stroke="#231F20" stroke-miterlimit="10" cx="5.134" cy="13.105" rx="3.889" ry="1.945"/>
@@ -18,8 +32,8 @@
 				</div>
 			</div>
 			<div>
-				<img src="<?php bloginfo('template_directory'); ?>/images/Portfolio/NiceStamp_01.jpg" alt="">
-				<div class="text">The every stamp is hand-engraved after a personal interview session 
+				<img src="<?php bloginfo('template_directory'); ?>/images/slide-3.jpg" alt="">
+				<div class="text">The project “Nice to stamp you” began with the words of a person who visited my studio.  
 					<svg width="18px" height="16px" viewBox="0 0 18 16">
 						<ellipse fill="none" stroke="#231F20" stroke-miterlimit="10" cx="5.134" cy="13.105" rx="3.889" ry="1.945"/>
 						<ellipse fill="none" stroke="#231F20" stroke-miterlimit="10" cx="12.912" cy="13.105" rx="3.889" ry="1.945"/>
@@ -31,21 +45,7 @@
 					</svg>
 				</div>
 			</div>
-			<div>
-				<img src="<?php bloginfo('template_directory'); ?>/images/Portfolio/NiceStamp_02.jpg" alt="">
-				<div class="text">The every stamp is hand-engraved after a personal interview session 
-					<svg width="18px" height="16px" viewBox="0 0 18 16">
-						<ellipse fill="none" stroke="#231F20" stroke-miterlimit="10" cx="5.134" cy="13.105" rx="3.889" ry="1.945"/>
-						<ellipse fill="none" stroke="#231F20" stroke-miterlimit="10" cx="12.912" cy="13.105" rx="3.889" ry="1.945"/>
-						<ellipse fill="none" stroke="#231F20" stroke-width="0.75" stroke-miterlimit="10" cx="9.024" cy="8.818" rx="1.546" ry="3.09"/>
-						<path fill="none" stroke="#231F20" stroke-miterlimit="10" d="M1.246,13.105c0-4.297,3.48-7.779,7.777-7.779
-							c4.295,0,7.777,3.482,7.777,7.779"/>
-						<path fill="#231F20" d="M10.151,1.685c0,0.625-0.505,1.13-1.127,1.13c-0.624,0-1.129-0.505-1.129-1.13
-							c0-0.621,0.505-1.127,1.129-1.127C9.646,0.558,10.151,1.064,10.151,1.685z"/>
-					</svg>
-				</div>
-			</div>
-			<div>
+			<!-- <div>
 				<img src="<?php bloginfo('template_directory'); ?>/images/Portfolio/NiceStamp_04.jpg" alt="">
 				<div class="text">The every stamp is hand-engraved after a personal interview session 
 					<svg width="18px" height="16px" viewBox="0 0 18 16">
@@ -72,12 +72,12 @@
 							c0-0.621,0.505-1.127,1.129-1.127C9.646,0.558,10.151,1.064,10.151,1.685z"/>
 					</svg>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </section>
 
-<section id="stamp">
+<section id="nice-to-stamp-you">
 	<div class="wrap">
 		<h2 class="heading">Nice to stamp you</h2>
 		<div class="step">
@@ -176,7 +176,7 @@
 		
 </section>
 
-<section id="price">
+<section id="order">
 	<div class="wrap">
 		<h2 class="heading">Order</h2>
 		<div class="wrap--600 price">
@@ -356,7 +356,7 @@
 		</article>
 	</div>		
 </section>
-<section id="story">
+<section id="background">
 	<div class="wrap">
 		<h2 class="heading">Background</h2>
 		<div class="step">
@@ -399,6 +399,11 @@
 		</p>
 
 	</div> -->
+</section>
+<section id="footer">
+	<div class="wrap">
+		<img class="stroom" src="<?php bloginfo('template_directory'); ?>/images/stroom.jpg" alt="">		
+	</div>
 </section>
 
 <?php get_footer(); ?>

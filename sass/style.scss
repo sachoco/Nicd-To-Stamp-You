@@ -170,7 +170,8 @@ section {
 			}
 			.text {
 				position: absolute;
-				top: 20%;
+				top: 50%;
+				transform: translateY(-50%);
 				right: 0;
 				background-color: white;
 				padding: 1.5em;
@@ -188,10 +189,11 @@ section {
 		}
 
 	}
-	&#story {
+	&#background {
 		// background: #D7D8DC;
 		// background: #D7D8DC url(../images/nice_stamp_back_crop.jpg) no-repeat center 300px;
 		background-size: cover;
+		padding-bottom: 0;
 		.step {
 			position: relative;
 			height: 400px;
@@ -216,6 +218,7 @@ section {
 				left: 50%;
 				width: 50%;
 				padding-right: 20px;
+				z-index: 9;
 			}
 			&__image {
 				position: absolute;
@@ -241,7 +244,7 @@ section {
 			transform: translateX(-50%);
 		}
 	}
-	&#stamp {
+	&#nice-to-stamp-you {
 		.step {
 			position: relative;
 			height: 400px;
@@ -266,6 +269,7 @@ section {
 				left: 50%;
 				width: 50%;
 				padding-right: 20px;
+				z-index: 9;
 			}
 			&__image {
 				position: absolute;
@@ -331,7 +335,7 @@ section {
 		}		
 	}
 
-	&#price {
+	&#order {
 		.price {
 			margin-bottom: 3em;
 			&__item {
@@ -416,6 +420,9 @@ section {
 				float: left;
 			}			
 		}
+	}
+	&#footer {
+		padding-top: 0;
 	}
 }
 /*

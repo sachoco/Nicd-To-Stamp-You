@@ -333,7 +333,10 @@ section#intro .carousel img {
 }
 section#intro .carousel .text {
   position: absolute;
-  top: 20%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   right: 0;
   background-color: white;
   padding: 1.5em;
@@ -350,88 +353,91 @@ section#intro .carousel .text svg {
       -ms-transform: scale(1.3);
           transform: scale(1.3);
 }
-section#story {
+section#background {
   background-size: cover;
+  padding-bottom: 0;
 }
-section#story .step, section#story section#how .step--500, section#how section#story .step--500 {
+section#background .step, section#background section#how .step--500, section#how section#background .step--500 {
   position: relative;
   height: 400px;
 }
-section#story .step__text {
+section#background .step__text {
   width: 60%;
 }
-section#story .step__image {
+section#background .step__image {
   position: absolute;
   top: -30px;
   margin-left: 63%;
 }
-section#story .product {
+section#background .product {
   height: 400px;
   position: relative;
 }
-section#story .product__text {
+section#background .product__text {
   position: absolute;
   top: 0;
   left: 50%;
   width: 50%;
   padding-right: 20px;
+  z-index: 9;
 }
-section#story .product__image {
+section#background .product__image {
   position: absolute;
   width: 60%;
   top: 0;
   left: 0;
   overflow: visible;
 }
-section#story .product__image img {
+section#background .product__image img {
   position: relative;
   top: -60px;
 }
-section#story .stamp1 {
+section#background .stamp1 {
   position: absolute;
   right: 100px;
   -webkit-transform: translateY(-80%);
       -ms-transform: translateY(-80%);
           transform: translateY(-80%);
 }
-section#story .stamp2 {
+section#background .stamp2 {
   position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
 }
-section#stamp .step, section#stamp section#how .step--500, section#how section#stamp .step--500 {
+section#nice-to-stamp-you .step, section#nice-to-stamp-you section#how .step--500, section#how section#nice-to-stamp-you .step--500 {
   position: relative;
   height: 400px;
 }
-section#stamp .step__text {
+section#nice-to-stamp-you .step__text {
   width: 60%;
 }
-section#stamp .step__image {
+section#nice-to-stamp-you .step__image {
   position: absolute;
   top: -30px;
   margin-left: 63%;
 }
-section#stamp .product {
+section#nice-to-stamp-you .product {
   height: 400px;
   position: relative;
 }
-section#stamp .product__text {
+section#nice-to-stamp-you .product__text {
   position: absolute;
   top: 0;
   left: 50%;
   width: 50%;
   padding-right: 20px;
+  z-index: 9;
 }
-section#stamp .product__image {
+section#nice-to-stamp-you .product__image {
   position: absolute;
   width: 60%;
   top: 0;
   left: 0;
   overflow: visible;
 }
-section#stamp .product__image img {
+section#nice-to-stamp-you .product__image img {
   position: relative;
   margin-left: -100px;
   top: -160px;
@@ -459,36 +465,36 @@ section#how .step.step-2 .step__image, section#how .step-2.step--500 .step__imag
   margin-top: 80px;
   margin-bottom: 80px;
 }
-section#price .price {
+section#order .price {
   margin-bottom: 3em;
 }
-section#price .price__item {
+section#order .price__item {
   width: 33.33%;
   text-align: center;
   float: left;
 }
-section#price .price__item .btn {
+section#order .price__item .btn {
   margin-top: 1em;
 }
-section#price .logo-stamp {
+section#order .logo-stamp {
   margin-top: 5em;
   float: left;
 }
-section#price .logo-stamp__text {
+section#order .logo-stamp__text {
   width: 40%;
   float: left;
 }
-section#price .logo-stamp__image {
+section#order .logo-stamp__image {
   overflow: visible;
   width: 60%;
   float: left;
 }
-section#price .price-include {
+section#order .price-include {
   max-width: 400px;
   text-align: center;
   margin: auto;
 }
-section#price .price-include img {
+section#order .price-include img {
   width: 100%;
 }
 section#contact input, section#contact textarea {
@@ -524,6 +530,9 @@ section#media .news__image {
   overflow: visible;
   width: 50%;
   float: left;
+}
+section#footer {
+  padding-top: 0;
 }
 
 /*
