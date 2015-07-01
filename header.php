@@ -36,8 +36,8 @@
 
     <body <?php body_class(); ?>>
         <header>
-            <div class="wrap">
-                <h1>Nice to stamp you <span>by Masa</span></h1>
+            <div class="wrap--1200">
+                <h1><img src="<?php echo get_template_directory_uri(); ?>/images/logo.jpg" alt="nice to stamp you"></h1>
                 <nav class="main-nav <?php if( !is_home() && !is_front_page() ) echo 'page'  ?>" role="navigation">
 <!--                 <div id="menu-icon" class="mobile-button"><span>Menu</span></div>
  -->                <?php wp_nav_menu(array(
@@ -57,9 +57,9 @@
                 </nav>
                 <nav class="top-nav">
                     <ul>
-                        <li><a href="#">About Masa</a></li>
-                        <li><a href="#">Agenda/ Media</a></li>
-                        <li><a href="#">EN/JP</a></li>
+<!--                         <li><a href="#agenda">Agenda/ Media</a></li>
+ -->                        <li><a href="#about">About Masa</a></li>
+                        <li><a href="#background">Background</a></li>
                     </ul>
                 </nav>
             </div>

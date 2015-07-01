@@ -1,8 +1,12 @@
 (function() {
   jQuery(function($) {
     $('.carousel').slick({
-      dots: true,
-      infinite: true
+      infinite: true,
+      fade: true,
+      cssEase: 'linear',
+      autoplay: true,
+      speed: 1000,
+      autoplaySpeed: 8000
     });
     $('#calendar').fullCalendar({
       googleCalendarApiKey: 'AIzaSyCKpdEmBFNJBWEwuz-Q2noPv4cz2b9W7Us',
@@ -12,6 +16,15 @@
       eventClick: function(calEvent, jsEvent, view) {
         return false;
       }
+    });
+    $('nav a').on("click", function(e) {
+      var id, p;
+      id = $(this).attr("href");
+      p = $(id).offset().top;
+      e.preventDefault();
+      return $('html,body').animate({
+        scrollTop: p
+      }, 1000);
     });
     return this;
   });
